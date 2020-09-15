@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Javascript Calculator-FCC</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<title>Javascript Calculator</title>
+<body>
+  
+<!--  Calculation display area  -->
+  <div class="App">
+        <div class="wrapper">	
+            <div class="row">         
+            <input type="text" name ="display" id="display" disabled />
+            </div>
+<!--   1st  Number row         -->
+          <div class="row">
+            <input type="button" id="clear" value="AC" class='btn' onclick="clean()">
+            <input type="button" id="divide" value="/" class='btn' onclick="calc('/')">  
+            
+ <!--   Second  Number row         -->           
+          </div>
+          <div class="row" >
+             <input type="button" id="seven" value="7" class='btn' onclick="calc(7)">
+            <input type="button" id="eight" value="8" class='btn' onclick="calc(8)">
+            <input type="button" id="nine" value="9" class='btn' onclick="calc(9)">
+            <input type="button" id="multiply" value="*" class='btn' onclick="calc('*')">
+ <!--   3th  Number row         -->           
+          </div>
+          <div class="row">
+            <input type="button" id="four" value="4" class='btn' onclick="calc(4)">
+            <input type="button" id="five" value="5" class='btn' onclick="calc(5)">
+            <input type="button" id="six" value="6" class='btn' onclick="calc(6)">
+            <input type="button" id="add" value="+" class='btn' onclick="calc('+')">
+          </div>
+ <!--   4th  Number row         -->         
+          <div class="row">
+            <input type="button" id="one" value="1" class='btn' onclick="calc(1)">
+            <input type="button" id="two" value="2" class='btn' onclick="calc(2)">
+            <input type="button" id="three" value="3" class='btn' onclick="calc(3)">
+            <input type="button" id="subtract" value="-" class='btn' onclick="calc('-')">
+            
+<!--   5th  Number row         -->           
+          </div>
+          <div class="row">
+            <input type="button" id="zero" value="0" class='btn' onclick="calc(0)">
+            <input type="button" id="decimal" value="." class='btn' onclick="calc('.')">
+             <input type="button" id="equals" value="=" class='btn' onclick="equal()">            
+          </div>
+
+        </div>
+      </div> 
+  
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
